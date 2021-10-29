@@ -1,0 +1,244 @@
+/*article-card*/
+.article{
+  display: flex;
+}
+.article .image{
+  background-color: rgb(141, 141, 141);
+}
+.article .article-headline{
+  font-weight: bold;
+  color: #1f1f1f;
+}
+.article p{
+  color: #1f1f1f;
+}
+.article .detail-and-actions{
+  color: #242424;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.article .content-cover{
+  width: 100%;
+}
+
+.article .content .detail-and-actions i:hover{
+  color: blue;
+}
+.article .actions{
+  display: flex;
+}
+.article .fa-share-alt{
+  font-size: 18px;
+  margin-left: 10px;
+}
+.article .fa-bookmark{
+  font-size: 19px;
+  margin-left: 20px;
+}
+
+
+
+
+/*----article-verticle-card---------*/
+.verticle{
+  margin-bottom: 35px;
+}
+
+
+.verticle .image{
+  min-width: 15vw;
+  height: 13vw;
+  margin-right: 20px;
+}
+
+/*category title*/.verticle .content h2 span{
+  font-size: 1rem;
+  padding: 2px 12px;
+  color: white;
+  text-transform: uppercase;
+}
+.verticle .content h2{
+  padding-top: 6px;
+  margin-bottom: 18px;
+}
+
+
+.verticle .content .article-headline{
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.verticle p{
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  line-height: 1.4rem;
+}
+
+.verticle .content .detail-and-actions{
+  font-size: 1rem;
+}
+
+
+
+@media(max-width: 1000px){
+ 
+  .verticle .image{
+    min-width: 150px;
+    height: 140px;
+  }
+}
+
+/***article card ***/
+.horizontal {
+  /*max-width: 240px;*/
+  width: 18vw;
+  flex-direction: column;
+}
+.horizontal .image{
+  background-size: cover;
+  width: 18vw;
+  height: 12vw;
+}
+.horizontal .image i{
+  margin-left: 16vw;
+  margin-top: 1vw;
+  color: white;
+  text-shadow: 0px 3px  5px #797979bb;
+}
+
+.horizontal .content{
+  margin-top:8px;
+}
+.horizontal .article-headline{
+  font-size: 0.9rem;
+  line-height: 1rem;
+  margin-bottom: 5px;
+}
+.horizontal p{
+  font-size: 0.8rem;
+  line-height: 1rem;
+  margin-bottom: 5px;
+}
+
+.horizontal .detail-and-actions .detail{
+  font-size: 0.8rem;
+}
+
+.horizontal .actions .fa-bookmark{
+  display: none;
+}
+.horizontal .detail-and-actions i{
+  font-size: 15px;
+}
+@media(max-width:1250px){
+  .horizontal {
+    width: 19vw;
+  }
+  .horizontal .image{
+    width: 19.5vw;
+    height: 15vw;
+  }
+}
+@media(max-width: 1000px){
+  .horizontal {
+    width: 35vw;
+    margin-bottom: 5vw;
+  }
+  .horizontal .image{
+    width: 35vw;
+    height: 20vw;
+  }
+  .horizontal .image i{
+    margin-top: 2vw;
+    margin-left: 30vw;
+  }
+}
+
+
+@media(max-width: 600px){
+  .horizontal .actions{
+    display: flex;
+  }
+  .horizontal .image i{
+    display: none;
+  }
+  .horizontal .actions .fa-bookmark{
+    display: block;
+  }
+  .article .content h2{
+    padding-top: 0px;
+  }
+  .article .image{
+    min-width: 100px;
+    width: 100px;
+    height: 85px;
+    margin-right: 15px;
+  }
+  .article{
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*border-bottom: 0.5px  solid rgb(206, 205, 205);*/
+    box-shadow:  0.5px 0.5px  3.5px #4e4e4e63;
+  }
+  .article .content .article-headline{
+    font-weight: normal;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    margin-bottom: 8px;
+  }
+  .article p{
+    display: none;
+  }
+  .article .content h2{
+    margin-bottom: 5px;
+  }
+  .article .content h2 span{
+    font-size: 0.6rem;
+    padding: 1px 10px;
+    color: white;
+    text-transform: uppercase;
+  }
+  .article .content .detail-and-actions .detail{
+    font-size: 0.7rem;
+    font-weight: normal;
+    color: #636c6c;
+  }
+  .article .image i{
+    display: none;
+  }
+  .article .actions{
+    display: flex;
+    padding-right: 5%;
+    margin-left:3px;
+  }
+  .article .actions .fa-bookmark{
+    display: block;
+  }
+  .article .detail-and-actions .detail {
+    font-size: 0.7rem;
+    font-weight:normal;
+    color: #636c6c;
+}
+.article .content i{
+  font-size: 15px;
+}
+  .article p{
+    display: none;
+  }
+
+}
+@media(max-width: 375px){
+  .article .image{
+    display: none;
+  }
+}
+
+
+
+
+
